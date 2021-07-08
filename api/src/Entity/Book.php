@@ -72,8 +72,6 @@ class Book
     {
         $this->datePublished = $datePublished;
 
-        
-
         return $this;
     }
 }
