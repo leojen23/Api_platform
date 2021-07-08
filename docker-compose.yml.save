@@ -31,12 +31,12 @@ services:
     depends_on:
       - php
       - pwa
-    environment:
-      PWA_UPSTREAM: pwa:3000
-      SERVER_NAME: ${SERVER_NAME:-cda2-devops-olivier.simplon-roanne.com, caddy:80}
-      MERCURE_PUBLISHER_JWT_KEY: ${MERCURE_PUBLISHER_JWT_KEY:-!ChangeMe!}
-      MERCURE_SUBSCRIBER_JWT_KEY: ${MERCURE_SUBSCRIBER_JWT_KEY:-!ChangeMe!}
-    restart: unless-stopped
+    environment: PWA_UPSTREAM: pwa:3000 SERVER_NAME: ${SERVER_NAME:cda, 
+      caddy:80} MERCURE_PUBLISHER_JWT_KEY: 
+      ${MERCURE_PUBLISHER_JWT_KEY:-!ChangeMe!} 
+      MERCURE_SUBSCRIBER_JWT_KEY: 
+      ${MERCURE_SUBSCRIBER_JWT_KEY:-!ChangeMe!}
+devop    restart: unless-stopped
     volumes:
       - php_socket:/var/run/php
       - caddy_data:/data
