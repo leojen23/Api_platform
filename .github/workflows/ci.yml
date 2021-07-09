@@ -57,6 +57,15 @@ jobs:
           token: ${{ secrets.PAT }}
           branch: master
           base: main
+      - name: deploy website
+        uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: 'hBelG9LgzAW7pyKiccnKcMfk' # Required
+          github-token: ${{ secrets.PAT }} #Optional 
+          vercel-args: '--prod' #Optional
+          vercel-org-id: "mTqeoDhCsEcWdVnhTfVvco6q"  #Required
+          vercel-project-id: "prj_J3Vnr1t0rzwu58YPAJsBmsKlyhKm" #Required 
+          working-directory: ./pwa
           
 
 
