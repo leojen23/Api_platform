@@ -28,4 +28,5 @@ Page.getInitialProps = async () => {
   return { collection };
 };
 
+
 export default Page;
