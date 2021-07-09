@@ -65,7 +65,7 @@ jobs:
           vercel-args: '--prod' #Optional
           vercel-org-id: "mTqeoDhCsEcWdVnhTfVvco6q"  #Required
           vercel-project-id: "prj_J3Vnr1t0rzwu58YPAJsBmsKlyhKm" #Required 
-          working-directory: ./pwa
+          
           
 
 
